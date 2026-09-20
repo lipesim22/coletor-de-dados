@@ -1,0 +1,19 @@
+# Modelo em branco: troque a url e os seletores pelo site do cliente.
+url: "https://exemplo.com/vagas"
+seletor_item: ".job-card"
+campo_chave: "titulo"
+campos:
+  - nome: "titulo"
+    seletor: "h2"
+  - nome: "empresa"
+    seletor: ".company"
+  - nome: "local"
+    seletor: ".location"
+  - nome: "link"
+    seletor: "a"
+    atributo: "href"
+seletor_proxima_pagina: "a.next"
+paginas: 1
+espera_segundos: 1.5
+arquivo_saida: "saida/vagas.xlsx"
+aba: "Vagas"
