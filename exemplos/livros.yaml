@@ -1,0 +1,20 @@
+# Exemplo real: books.toscrape.com é um site feito para treinar coleta de dados.
+url: "https://books.toscrape.com/"
+seletor_item: "article.product_pod"
+campo_chave: "titulo"
+campos:
+  - nome: "titulo"
+    seletor: "h3 a"
+    atributo: "title"
+  - nome: "preco"
+    seletor: "p.price_color"
+  - nome: "disponibilidade"
+    seletor: "p.instock.availability"
+  - nome: "link"
+    seletor: "h3 a"
+    atributo: "href"
+seletor_proxima_pagina: "li.next a"
+paginas: 2
+espera_segundos: 1.0
+arquivo_saida: "saida/livros.xlsx"
+aba: "Livros"
