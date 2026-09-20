@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+saida/
+*.xlsx
+.venv/
+.pytest_cache/
